@@ -1,11 +1,26 @@
-<h1>Members</h1>
+{% load static %}
+<header>
+<!-- CSS CUSTOM -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</header>
 
-<table>
-{% for x in mymembers %}
-<tr>
-<td>{{ x.id }}</td>
-<td>{{ x.firstname }}</td>
-<td>{{ x.lastname }}</td>
-</tr>
-{% endfor %}
-</table>
+<body>
+<h1>Haylar</h1>
+
+<div>
+    {% for x in mymembers %}
+    <div class="names">
+        {{ x.firstName }} {{ x.lastName }}
+        <button class="delete-button">
+            <a href="delete/{{ x.id }}">DELETE</a>
+        </button>
+    </div>
+    {% endfor %}
+</div>
+
+<button>
+<a href="add/">ADD A MEMBER</a>
+</button>
+</body>
+
+

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap');
+
+* {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+body{
+    background-color: bisque;
+    text-align: center;
+}
+
+.names {
+    height: 50px;
+}
+
+button {
+    height: 35px;
+    border-radius: 5px;
+    background-color: black;
+    color: antiquewhite;
+    font-weight: 700;
+    width: 120px;
+}
+
+.delete-button{
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    background-color: darkgoldenrod;
+    color: antiquewhite;
+}
+
+.delete-button > a{
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: 700;
+}
+
+.addform{
+    height: 200px;
+    display: grid;
+    grid-template-rows: 30% 30% 40%;
+    align-items: center;
+    justify-items: center;
+}
+
+input{
+    border-radius: 5px;
+    border: gray 1px solid;
+    height: 30px;
+}
+
+input:active{
+    border: black 3px solid;
+}
+
+span{
+    font-weight: 600;
+}
