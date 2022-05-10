@@ -16,7 +16,7 @@
 
 # [START django_app]
 # [START gaestd_py_django_app_yaml]
-runtime: python39
+runtime: python310
 
 env_variables:
   # This setting is used in settings.py to configure your ALLOWED_HOSTS
@@ -36,3 +36,6 @@ handlers:
   script: auto
 # [END gaestd_py_django_app_yaml]
 # [END django_app]
+
+entrypoint:
+  gunicorn -b :$PORT main:app
