@@ -8,20 +8,19 @@
 <h1>Haylar</h1>
 
 <div>
-    <h1>does it work</h1>
-{#    {% for x in mymembers %}#}
-{#    <div class="names">#}
-{#        {{ x.firstName }} {{ x.lastName }}#}
-{#        <button class="delete-button">#}
-{#            <a href="delete/{{ x.id }}">DELETE</a>#}
-{#        </button>#}
-{#    </div>#}
-{#    {% endfor %}#}
+    {% for x in mymembers %}
+    <div class="names">
+        {{ x.firstName }} {{ x.lastName }}
+        <button class="delete-button">
+            <a href="delete/{{ x.id }}">DELETE</a>
+        </button>
+    </div>
+    {% endfor %}
 </div>
 
-{#<button>#}
-{#<a href="add/">ADD A MEMBER</a>#}
-{#</button>#}
+<button>
+<a href="add/">ADD A MEMBER</a>
+</button>
 </body>
 
 
